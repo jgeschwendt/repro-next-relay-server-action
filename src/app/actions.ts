@@ -6,14 +6,14 @@ import type { actionsSetValueMutation } from '@/relay/actionsSetValueMutation.gr
 
 export async function setValue(string: string): Promise<void> {
   // comment out the next two statements to successfully compile
-  // const taggedNode = graphql`
-  //   mutation actionsSetThingMutation($value: String!) {
-  //     setRocket(value: $value) {
-  //       name
-  //     }
-  //   }
-  // `
-  // console.log({ taggedNode })
+  const taggedNode = graphql`
+    mutation actionsSetThingMutation($value: String!) {
+      setRocket(value: $value) {
+        name
+      }
+    }
+  `
+  console.log({ taggedNode })
 
   const response = await fetch("http://localhost:3000/graphql", {
     body: JSON.stringify({
