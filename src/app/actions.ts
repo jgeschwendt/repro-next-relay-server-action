@@ -1,10 +1,10 @@
-"use server";
-
 import { graphql } from "relay-runtime";
 import { revalidatePath } from "next/cache";
 import type { actionsSetValueMutation } from '@/relay/actionsSetValueMutation.graphql';
 
 export async function setValue(string: string): Promise<void> {
+  "use server";
+
   // comment out the next two statements to successfully compile
   const taggedNode = graphql`
     mutation actionsSetThingMutation($value: String!) {
