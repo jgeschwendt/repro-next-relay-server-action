@@ -1,0 +1,16 @@
+type Thing {
+  name: String
+}
+
+type Query {
+  thing: Thing
+}
+
+type Mutation {
+  setThing(value: String): Thing
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
