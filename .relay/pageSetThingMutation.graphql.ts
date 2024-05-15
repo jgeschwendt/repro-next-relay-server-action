@@ -1,5 +1,5 @@
 /**
- * @generated SignedSource<<17445a20af5fac96d8255d39fe731389>>
+ * @generated SignedSource<<6954a62d192853e97cf170fab280c1cc>>
  * @lightSyntaxTransform
  * @nogrep
  */
@@ -9,17 +9,17 @@
 // @ts-nocheck
 
 import type { ConcreteRequest, Mutation } from 'relay-runtime';
-export type actionsSetThingMutation$variables = {
+export type pageSetThingMutation$variables = {
   value: string;
 };
-export type actionsSetThingMutation$data = {
+export type pageSetThingMutation$data = {
   readonly setThing: {
     readonly name: string | null | undefined;
   } | null | undefined;
 };
-export type actionsSetThingMutation = {
-  response: actionsSetThingMutation$data;
-  variables: actionsSetThingMutation$variables;
+export type pageSetThingMutation = {
+  response: pageSetThingMutation$data;
+  variables: pageSetThingMutation$variables;
 };
 
 const node: ConcreteRequest = (function(){
@@ -61,7 +61,7 @@ return {
     "argumentDefinitions": (v0/*: any*/),
     "kind": "Fragment",
     "metadata": null,
-    "name": "actionsSetThingMutation",
+    "name": "pageSetThingMutation",
     "selections": (v1/*: any*/),
     "type": "Mutation",
     "abstractKey": null
@@ -70,20 +70,20 @@ return {
   "operation": {
     "argumentDefinitions": (v0/*: any*/),
     "kind": "Operation",
-    "name": "actionsSetThingMutation",
+    "name": "pageSetThingMutation",
     "selections": (v1/*: any*/)
   },
   "params": {
-    "cacheID": "31077384368230a6dcfff1bd3d508a89",
+    "cacheID": "d0e1cba62fba7127b2842aa1d3a097cc",
     "id": null,
     "metadata": {},
-    "name": "actionsSetThingMutation",
+    "name": "pageSetThingMutation",
     "operationKind": "mutation",
-    "text": "mutation actionsSetThingMutation(\n  $value: String!\n) {\n  setThing(value: $value) {\n    name\n  }\n}\n"
+    "text": "mutation pageSetThingMutation(\n  $value: String!\n) {\n  setThing(value: $value) {\n    name\n  }\n}\n"
   }
 };
 })();
 
-(node as any).hash = "891daf3bda9d3b95e6990c0d20d878a7";
+(node as any).hash = "93cb9611b4c7fb57eaa307d769e7c808";
 
 export default node;

@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - test
+      - rsc-action
 
 jobs:
   run:
